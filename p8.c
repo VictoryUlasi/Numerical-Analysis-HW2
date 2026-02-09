@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <math.h>
-#include "p8_factorial.c"
+
+double p8_factorial(int n){
+
+    if (n == 0)
+        return 1;
+    
+    return n * p8_factorial(n-1);
+}
 
 double p8_sin_taylor(double x , int n){
 
