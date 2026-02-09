@@ -146,7 +146,9 @@ int main(){
         }
     }
 
-    printf("%lf" , best_alt_ft);
+    printf("best_alt_ft = %.0f\n", best_alt_ft);
+    printf("best_range_nmi = %.2f\n", best_range_nmi);
+
 
     free(altitudes);
     return 0;
