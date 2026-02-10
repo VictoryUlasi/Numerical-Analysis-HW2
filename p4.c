@@ -20,15 +20,15 @@ int main(){
     while(1){
 
         if ((roundf(pi_N*1e5)/1e5) == target){ //try ceilf for closer rounding im getting 2 different values from matlab and C
-            printf("%lf",pi_N);
+            //printf("%lf",pi_N);
             break;
         }
         else{
             partialSum = partialSum + increment(n);
             pi_N = 4*partialSum;
             
-            printf("pi_N = %lf\n", (roundf(pi_N*1e5)/1e5));
-            printf("N = %d\n", n);
+            // printf("pi_N = %lf\n", (roundf(pi_N*1e5)/1e5));
+            // printf("N = %d\n", n);
             n++;
         }
     }
